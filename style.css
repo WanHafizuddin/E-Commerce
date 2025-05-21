@@ -1,0 +1,23 @@
+
+    body {
+      font-family: Arial, sans-serif;
+    }
+    .hero {
+      background: url('https://via.placeholder.com/1400x500') no-repeat center center;
+      background-size: cover;
+      height: 500px;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 4rem;
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+    }
+    .product-card img {
+      height: 250px;
+      object-fit: cover;
+    }
+
