@@ -2,22 +2,64 @@
     body {
       font-family: Arial, sans-serif;
     }
-    .hero {
-      background: url('https://via.placeholder.com/1400x500') no-repeat center center;
-      background-size: cover;
-      height: 500px;
-      color: white;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-    }
-    .hero h1 {
-      font-size: 4rem;
-      text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
-    }
-    .product-card img {
-      height: 250px;
-      object-fit: cover;
-    }
+
+    /* Hero Section */
+.hero-section {
+  background: url('Gallery/BlackHotGuy.png') ;
+  height: 100vh;
+  position: relative;
+}
+
+.hero-overlay {
+  background: rgba(0, 0, 0, 0.4); /* dark overlay */
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-content {
+  text-shadow: 0 0 15px rgba(255, 255, 255, 0.9);
+}
+
+.logo-text {
+  font-family: 'Farro', sans-serif;
+  font-size: 28px;
+  font-weight: 400;
+  color: #f3f3f3;
+  letter-spacing: 1px;
+}
+
+
+.welcome-text {
+  font-size: 1.25rem;
+  letter-spacing: 2px;
+  font-weight: 400;
+}
+
+.navbar-brand img {
+  height: 50px;
+}
+
+
+.hero {
+  background-size: cover;
+  height: 500px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+}
+    
+.product-card img {
+  height: 250px;
+  object-fit: cover;
+}
 
