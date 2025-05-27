@@ -139,6 +139,10 @@ body {
 }
 
 /* product details */
+.prod_body {
+  background-image: url("Gallery/greyBackground1.jpg");
+}
+
 .photo-wrapper {
   max-height: 80vh;  /* or 100vh for full height */
   overflow-y: auto;
@@ -164,16 +168,22 @@ body {
   justify-content: center;
 }
 
-.btn1, .btn2 {
+#btn1, #btn2 {
   width: 500px;
 }
 
-.btn1 {
-  background-color: aquamarine;
+#btn1 {
+  background-color: black;
+  color: #f3f3f3;
 }
 
-.btn2 {
-  border-color: black;
+#btn2 {
+  background-color: #f3f3f3;
+}
+
+.btn {
+  background-color: white;
+  border: none;
 }
 
 
