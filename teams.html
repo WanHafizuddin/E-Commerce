@@ -7,19 +7,33 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container">
-      <a class="navbar-brand" href="index.html">Vamos</a>
-      <div class="collapse navbar-collapse">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
-          <li class="nav-item"><a class="nav-link active" href="teams.html">Teams</a></li>
-          <li class="nav-item"><a class="nav-link" href="news.html">News</a></li>
-        </ul>
+<!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-black py-3" id="navigationBar">
+  <div class="container-fluid px-4">
+    <a class="navbar-brand" href="index.html">
+      <span class="logo-text">Sigma Shop<sup>™</sup></span>
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#shop">Shop</a></li>
+        <li class="nav-item"><a class="nav-link" href="teams.html">Teams</a></li>
+        <li class="nav-item"><a class="nav-link" href="news.html">News</a></li>
+      </ul>
+
+      <div class="d-flex ms-lg-3">
+        <a href="profile-page.html" class="text-white me-3"><i class="bi bi-person"></i></a>
+        <a href="#" class="text-white"><i class="bi bi-cart"></i></a>
       </div>
     </div>
-  </nav>
+  </div>
+</nav>
 
   <section class="container py-5">
     <h1 class="mb-4">Meet Our Teams</h1>
