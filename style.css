@@ -1,3 +1,190 @@
+html {
+  scroll-padding-top: 80px; /* Adjust based on your navbar height */
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Hero Section */
+.hero-section {
+  background: url('Gallery/BlackHotGuy.png') ;
+  height: 100vh;
+  position: relative;
+}
+
+.hero-overlay {
+  background: rgba(0, 0, 0, 0.4); /* dark overlay */
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-content {
+  text-shadow: 0 0 15px rgba(255, 255, 255, 0.9);
+}
+
+.logo-text {
+  font-family: 'Farro', sans-serif;
+  font-size: 28px;
+  font-weight: 400;
+  color: #f3f3f3;
+  letter-spacing: 1px;
+}
+
+
+.welcome-text {
+  font-size: 1.25rem;
+  letter-spacing: 2px;
+  font-weight: 400;
+}
+
+.navbar-brand img {
+  height: 50px;
+}
+
+.hero {
+  background-size: cover;
+  height: 500px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+}
+
+/* Sticky Navigation Bar (MAY OR MAY NOT REMOVE LATER)*/
+#navigationBar {
+  position: sticky;
+  top: 0;
+  z-index: 999; 
+}
+
+/* FEATURED PRODUCTS Styling */
+
+#shop { /* Featured Products Background */
+  background-image: url("Gallery/greyBackground1.jpg");
+}
+
+.product-card { /* Product Card Styling */
+  background-color: #111;
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: background-color 0.3s ease;
+  position: relative;
+}
+
+.product-card:hover {
+  background-color: rgb(66, 66, 66);
+  transform: scale(1.01);
+  transition: all 0.3s ease;
+}
+
+.product-card img { /* Product Card Image */
+  height: 400px;
+  object-fit: cover;
+  border-bottom: 1px solid #444;
+}
+
+.cart-icon { /* Cart Icon Styling */
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 55px;
+  height: 55px;
+  background: #00ffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transform: translateY(-10px);
+  pointer-events: none; /* avoid ghost clicks */
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.cart-icon a {
+  color: #000;
+  font-size: 25px;
+  text-decoration: none;
+}
+
+.product-card:hover .cart-icon { /* Show with fade & motion on hover */
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.cart-icon:hover { /* Hover effects on cart icon */
+  background: #000;
+  transition: all 0.3s ease;
+}
+
+.cart-icon:hover a {
+  color: #00ffff;
+  transition: all 0.3s ease;
+}
+
+#shop h2 { /* Centered section heading */
+  font-family: 'Farro', sans-serif;
+  font-size: 2.7rem;
+}
+
+/* product details */
+.prod_body {
+  background-image: url("Gallery/greyBackground1.jpg");
+}
+
+.photo-wrapper {
+  max-height: 80vh;  /* or 100vh for full height */
+  overflow-y: auto;
+  padding-right: 15px; /* to avoid scroll bar overlap */
+
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  scrollbar-width: none;         /* Firefox */
+  -ms-overflow-style: none;      /* IE and Edge */
+}
+
+.photo-wrapper::-webkit-scrollbar {
+  display: none; /* Chrome, Safari and Opera */
+}
+
+.product-info {
+  position: sticky;
+  top: 20px;
+}
+
+.photo-section {
+  margin-bottom: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+#btn1, #btn2 {
+  width: 500px;
+}
+
+#btn1 {
+  background-color: black;
+  color: #f3f3f3;
+}
+
+#btn2 {
+  background-color: #f3f3f3;
+}
+
+.btn {
+  background-color: white;
+  border: none;
+}
 
     body {
       font-family: Arial, sans-serif;
