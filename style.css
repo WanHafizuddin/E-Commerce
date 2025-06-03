@@ -191,6 +191,7 @@ body {
   border: none;
 }
 
+/* Bawah ni ape mat asal ulang balik */
     body {
       font-family: Arial, sans-serif;
     }
@@ -250,8 +251,8 @@ body {
   text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
 }
     
-.product-card img {
+/*.product-card img {
   height: 250px;
   object-fit: cover;
-}
+}*/
 
