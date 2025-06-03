@@ -7,9 +7,6 @@
   <title>House of Sigma Login</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
-    body {
-      background-color: #f5f5f5;
-    }
 
     .login-box {
       max-width: 500px;
@@ -39,7 +36,47 @@
 </head>
 
 <body>
+  
+<!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-black py-3" id="navigationBar">
+  <div class="container-fluid px-4">
+    <a class="navbar-brand" href="index.html">
+      <span class="logo-text">Sigma Shop<sup>™</sup></span>
+    </a>
 
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link" href="#banner">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#shop">Shop</a></li>
+        <li class="nav-item"><a class="nav-link" href="teams.html">Teams</a></li>
+        <li class="nav-item"><a class="nav-link" href="news.html">News</a></li>
+      </ul>
+
+      <div class="d-flex ms-lg-3">
+        <a href="profile-page.html" class="text-white me-3"><i class="bi bi-person"></i></a>
+        <a href="#" class="text-white"><i class="bi bi-cart"></i></a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- Homepage Banner -->
+<section class="hero-section" id="banner">
+  <div class="hero-overlay">
+    <div class="text-center text-white hero-content">
+      <p class="welcome-text">WELCOME TO</p>
+      <h1 class="display-2 fw-bold">HOUSE OF SIGMA</h1>
+    </div>
+  </div>
+</section>
+
+<!-- Featured Products Section -->
+<section class="py-5" id="shop">
   <div class="container">
     <div class="login-box text-center">
       <h4 class="mb-4">House of Sigma</h4>
@@ -53,23 +90,16 @@
           <input type="password" class="form-control" id="password" placeholder="Password" required>
         </div>
 
-        <button type="submit" class="btn btn-primary w-100 mb-3" id="userLoginBtn">
-          Log in as User
-        </button>
+     <a href="homepage.html" class="btn btn-primary w-100 mb-3">Register as User</a>
 
-        <div class="d-flex align-items-center my-3">
-          <hr class="flex-grow-1">
-          <span class="mx-2 text-muted">or</span>
-          <hr class="flex-grow-1">
-        </div>
+<div class="d-flex align-items-center my-3">
+  <hr class="flex-grow-1">
+  <span class="mx-2 text-muted">or</span>
+  <hr class="flex-grow-1">
+</div>
 
-        <button type="submit" class="btn btn-primary w-100 mb-3" id="adminLoginBtn">
-          Log in as Admin
-        </button>
-      </form>
-      <a href="#" class="privacy-link">Privacy</a>
-    </div>
-  </div>
+<a href="homepage.html" class="btn btn-primary w-100 mb-3">Register as Admin</a>
+
 
   <script>
   const loginForm = document.getElementById("loginForm");
