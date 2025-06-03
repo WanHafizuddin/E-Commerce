@@ -138,6 +138,11 @@ body {
   font-size: 2.7rem;
 }
 
+.detail-link {
+  color: #f3f3f3;
+  text-decoration: none;
+}
+
 /* product details */
 .prod_body {
   background-image: url("Gallery/greyBackground1.jpg");
