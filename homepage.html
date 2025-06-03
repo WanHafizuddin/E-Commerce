@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sigma Shop</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Farro&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="Gallery/favicon.ico"> <!-- Favicon (CAN CHANGE LATER)-->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  
+<!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-black py-3" id="navigationBar">
+  <div class="container-fluid px-4">
+    <a class="navbar-brand" href="index.html">
+      <span class="logo-text">Sigma Shop<sup>™</sup></span>
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link" href="#banner">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#shop">Shop</a></li>
+        <li class="nav-item"><a class="nav-link" href="teams.html">Teams</a></li>
+        <li class="nav-item"><a class="nav-link" href="news.html">News</a></li>
+      </ul>
+
+      <div class="d-flex ms-lg-3">
+        <a href="profile-page.html" class="text-white me-3"><i class="bi bi-person"></i></a>
+        <a href="#" class="text-white"><i class="bi bi-cart"></i></a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- Homepage Banner -->
+<section class="hero-section" id="banner">
+  <div class="hero-overlay">
+    <div class="text-center text-white hero-content">
+      <p class="welcome-text">WELCOME TO</p>
+      <h1 class="display-2 fw-bold">HOUSE OF SIGMA</h1>
+    </div>
+  </div>
+</section>
+
+<!-- Featured Products Section -->
+<section class="py-5" id="shop">
+  <div class="container">
+    <h2 class="text-center mb-5 text-white"><strong>Featured Products</strong></h2>
+    <div class="row g-4">
+
+      <!-- First Row -->
+      <div class="col-md-4">
+        <div class="card product-card text-white position-relative">
+            <img src="Gallery/johorAngels.jpeg" class="card-img-top" alt="Product 1">
+            <div class="card-body">
+              <h5 class="card-title"><strong>Johor Angels Jersey</strong></h5>
+              <p class="card-text">RM189.00</p>
+            </div>
+          <div class="cart-icon" title="Buy Now">
+            <a href="prod_details.html" class="detail-link"><i class="bi bi-cart-plus-fill"></i></a> <!-- Add link for cart icon here -->
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card product-card text-white position-relative">
+            <img src="Gallery/sigmaHoodie.png" class="card-img-top" alt="Product 2">
+            <div class="card-body">
+              <h5 class="card-title"><strong>Sigma Hoodie</strong></h5>
+              <p class="card-text">RM59.00</p>
+            </div>
+          <div class="cart-icon" title="Buy Now">
+            <a href="prod_details.html" class="detail-link"><i class="bi bi-cart-plus-fill"></i></a> <!-- Add link for cart icon here -->
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card product-card text-white position-relative">
+            <img src="Gallery/sigmaCollared.png" class="card-img-top" alt="Product 3">
+            <div class="card-body">
+              <h5 class="card-title"><strong>Sigma Collared T-Shirt</strong></h5>
+              <p class="card-text">RM79.00</p>
+            </div>
+          <div class="cart-icon" title="Buy Now">
+            <a href="prod_details.html" class="detail-link"><i class="bi bi-cart-plus-fill"></i></a> <!-- Add link for cart icon here -->
+          </div>
+        </div>
+      </div>
+
+      <!-- Second Row -->
+      <div class="col-md-4">
+        <div class="card product-card text-white position-relative">
+            <img src="Gallery/sigmaShorts.png" class="card-img-top" alt="Product 4">
+            <div class="card-body">
+              <h5 class="card-title"><strong>Sigma Shorts</strong></h5>
+              <p class="card-text">RM49.00</p>
+            </div>
+          <div class="cart-icon" title="Buy Now">
+            <a href="prod_details.html" class="detail-link"><i class="bi bi-cart-plus-fill"></i></a> <!-- Add link for cart icon here -->
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card product-card text-white position-relative">
+            <img src="Gallery/sigmaBelt.png" class="card-img-top" alt="Product 5">
+            <div class="card-body">
+              <h5 class="card-title"><strong>Sigma Belt</strong></h5>
+              <p class="card-text">RM39.00</p>
+            </div>
+          <div class="cart-icon" title="Buy Now">
+            <a href="prod_details.html" class="detail-link"><i class="bi bi-cart-plus-fill"></i></a> <!-- Add link for cart icon here -->
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card product-card text-white position-relative">
+            <img src="Gallery/sigmaTie.png" class="card-img-top" alt="Product 6">
+            <div class="card-body">
+              <h5 class="card-title"><strong>Sigma Tie</strong></h5>
+              <p class="card-text">RM29.00</p>
+            </div>
+          <div class="cart-icon" title="Buy Now">
+            <a href="prod_details.html" class="detail-link"><i class="bi bi-cart-plus-fill"></i></a> <!-- Add link for cart icon here -->
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- Footer -->
+<footer class="bg-dark text-white text-center py-4">
+  <div class="container">
+    <p>&copy; 2025 Sigma Shop. All rights reserved.</p>
+  </div>
+</footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
