@@ -45,20 +45,50 @@
       <h4 class="mb-4">House of Sigma</h4>
       <h5 class="text-start">Log in</h5>
       <p class="text-start">Enter your Username and Password. </p>
-      <form action="index.html" method="get">
+      <form id="loginForm">
         <div class="mb-3 text-start">
-          <input type="text" class="form-control" placeholder="Username" required>
+          <input type="text" class="form-control" id="username" placeholder="Username" required>
         </div>
         <div class="mb-3 text-start">
-          <input type="text" class="form-control" placeholder="Password" required>
+          <input type="password" class="form-control" id="password" placeholder="Password" required>
         </div>
-        <button type="submit" class="btn btn-primary w-100 mb-3">
-          Continue
+
+        <button type="submit" class="btn btn-primary w-100 mb-3" id="userLoginBtn">
+          Log in as User
+        </button>
+
+        <div class="d-flex align-items-center my-3">
+          <hr class="flex-grow-1">
+          <span class="mx-2 text-muted">or</span>
+          <hr class="flex-grow-1">
+        </div>
+
+        <button type="submit" class="btn btn-primary w-100 mb-3" id="adminLoginBtn">
+          Log in as Admin
         </button>
       </form>
       <a href="#" class="privacy-link">Privacy</a>
     </div>
   </div>
+
+  <script>
+  const loginForm = document.getElementById("loginForm");
+  let redirectTo = "index.html"; // default
+
+  document.getElementById("userLoginBtn").addEventListener("click", function () {
+    redirectTo = "index.html";
+  });
+
+  document.getElementById("adminLoginBtn").addEventListener("click", function () {
+    redirectTo = "admin.html";
+  });
+
+  loginForm.addEventListener("submit", function (e) {
+    e.preventDefault(); // stop default submission
+    // you could add validation or login logic here
+    window.location.href = redirectTo;
+  });
+</script>
 
 </body>
 
